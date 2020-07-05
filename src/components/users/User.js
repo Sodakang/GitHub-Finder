@@ -49,7 +49,7 @@ export class User extends Component {
                 <div className="card grid-2">
                     <div className="all-center">
                         <img src={avatar_url} className="round-img" alt="" style={{width: '150px'}} />
-                        <h1>{name}</h1>
+                        {name ? <h1>{name}</h1> : <h1>{login}</h1>}
                         <p>Location: {location}</p>
                     </div>
                     <div>
